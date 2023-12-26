@@ -1,0 +1,28 @@
+- make folder 
+- make folder backend
+- go to folder backend
+- run "npm init -y"
+- install "npm i express cors dotenv"
+- install prisma by dependesi "npm i -D prisma"
+- install prisma client "npm i @prisma/client"
+- init prisma "npx prisma init"
+akan muncul file2 baru .env dan schema.rpisma untuk configurasi dan crete db
+model shema product
+
+model Product {
+  id        Int      @id @default(autoincrement())
+  name      String
+  price     Float
+  category  String
+  createdAt DateTime @default(now())
+}
+
+jalankan untuk migrate "npx prisma migrate dev"
+berikan nama migrate "1" bebas
+
+-tambahkan "type:"module" di package.json untuk mendukung es6
+- buat file index.js didalam folder backed
+
+-- frontend -- 
+mengunakan react 
+install react-router-doom,axios dan swr
